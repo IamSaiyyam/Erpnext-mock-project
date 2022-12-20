@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include erpnext_mock_project *.css
+recursive-include erpnext_mock_project *.csv
+recursive-include erpnext_mock_project *.html
+recursive-include erpnext_mock_project *.ico
+recursive-include erpnext_mock_project *.js
+recursive-include erpnext_mock_project *.json
+recursive-include erpnext_mock_project *.md
+recursive-include erpnext_mock_project *.png
+recursive-include erpnext_mock_project *.py
+recursive-include erpnext_mock_project *.svg
+recursive-include erpnext_mock_project *.txt
+recursive-exclude erpnext_mock_project *.pyc
