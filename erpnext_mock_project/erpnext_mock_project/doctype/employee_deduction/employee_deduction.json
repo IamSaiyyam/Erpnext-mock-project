@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:employee",
+ "creation": "2022-12-21 10:58:33.408555",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "deduction_detail",
+  "deduction_calculation",
+  "current_month_balance",
+  "total_balance"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee",
+   "unique": 1
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "deduction_detail",
+   "fieldtype": "Table",
+   "label": "Deduction Detail",
+   "options": "Deduction Detail"
+  },
+  {
+   "fieldname": "deduction_calculation",
+   "fieldtype": "Table",
+   "label": "Deduction Calculation",
+   "options": "Deduction Calculation"
+  },
+  {
+   "fieldname": "current_month_balance",
+   "fieldtype": "Currency",
+   "label": "Current Month Balance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_balance",
+   "fieldtype": "Currency",
+   "label": "Total Balance",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-21 10:58:33.408555",
+ "modified_by": "Administrator",
+ "module": "Erpnext Mock Project",
+ "name": "Employee Deduction",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

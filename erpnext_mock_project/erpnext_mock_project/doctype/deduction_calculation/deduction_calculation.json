@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "creation": "2022-12-21 10:54:04.079517",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "month",
+  "onetime",
+  "recurring",
+  "total",
+  "actual_paid_amount",
+  "balance"
+ ],
+ "fields": [
+  {
+   "fieldname": "month",
+   "fieldtype": "Data",
+   "label": "Month",
+   "read_only": 1
+  },
+  {
+   "fieldname": "onetime",
+   "fieldtype": "Currency",
+   "label": "Onetime",
+   "read_only": 1
+  },
+  {
+   "fieldname": "recurring",
+   "fieldtype": "Currency",
+   "label": "Recurring",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "actual_paid_amount",
+   "fieldtype": "Currency",
+   "label": "Actual Paid Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Currency",
+   "label": "Balance",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-21 19:19:04.180122",
+ "modified_by": "Administrator",
+ "module": "Erpnext Mock Project",
+ "name": "Deduction Calculation",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
