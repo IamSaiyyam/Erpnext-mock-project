@@ -210,47 +210,4 @@ function monthDiff(dateFrom, dateTo) {
 
 
 
-function storeObj(frm){
-	console.log(frm)
-	if(frm.selected_doc.deduction_type == "Onetime"){
-		if(frm.doc.deduction_calculation == undefined){
-			
-			let today = new Date(frm.selected_doc.end_date);
-			let month = today.toLocaleString('default', { month: 'short' });
-			let monthName = `${month}-${today.getFullYear()}`;
-			
-			frm.add_child('deduction_calculation', {
-				month : monthName,
-				onetime : frm.selected_doc.amount,
-				total : frm.selected_doc.amount,
-				balance : frm.selected_doc.amount
-
-			});
-			frm.refresh_field('deduction_calculation');
-		}
-	}	else{
-			
-			let dateFrom = new Date(frm.selected_doc.start_date),dateTo = new Date(frm.selected_doc.end_date),monthDiffNo,index = 0, amount;
-			
-			monthDiffNo = monthDiff(dateFrom, dateTo)+1
-			amount = frm.selected_doc.amount/monthDiffNo;
-
-			dateFrom = new Date(frm.selected_doc.start_date);
-
-			while(index < monthDiffNo){
-				let month = dateFrom.toLocaleString('default', { month: 'short' }), monthNo;
-				let monthName = `${month}-${dateFrom.getFullYear()}`;	
-				let obj = addObj(monthName, frm, amount)
-
-				frm.add_child('deduction_calculation', obj)
-				monthNo = dateFrom.getMonth()+1
-				dateFrom.setMonth(monthNo)
-				index++
-			}
-		frm.refresh_field('deduction_calculation');
-
-	}
-}
-
-
 
