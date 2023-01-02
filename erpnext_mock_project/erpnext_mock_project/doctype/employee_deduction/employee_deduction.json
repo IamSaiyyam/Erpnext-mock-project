@@ -56,7 +56,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-21 10:58:33.408555",
+ "modified": "2023-01-02 14:52:07.681697",
  "modified_by": "Administrator",
  "module": "Erpnext Mock Project",
  "name": "Employee Deduction",
@@ -78,5 +78,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

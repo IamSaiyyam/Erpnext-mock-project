@@ -40,8 +40,7 @@
   {
    "fieldname": "actual_paid_amount",
    "fieldtype": "Currency",
-   "label": "Actual Paid Amount",
-   "read_only": 1
+   "label": "Actual Paid Amount"
   },
   {
    "fieldname": "balance",
@@ -53,7 +52,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-12-21 19:19:04.180122",
+ "modified": "2023-01-02 13:18:21.886367",
  "modified_by": "Administrator",
  "module": "Erpnext Mock Project",
  "name": "Deduction Calculation",
